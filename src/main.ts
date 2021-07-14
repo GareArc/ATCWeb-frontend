@@ -1,9 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import Elment3 from "element3";
+import { ElButton } from "element3";
+import 'element3/lib/theme-chalk/button.css';
 
 createApp(App)
     .use(router)
-    .use(Elment3)
+    .use(ElButton)
     .mount("#app");

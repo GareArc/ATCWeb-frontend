@@ -1,0 +1,25 @@
+// Theme colors
+$theme-black: rgba(12, 24, 33, 1);
+$theme-black-70: rgba(40, 50, 60, 1);
+$theme-dark-blue: rgba(50, 74, 95, 1);
+$theme-pink: rgba(232, 93, 117, 1);
+$theme-gray: rgba(204, 204, 204, 1);
+$theme-white: rgba(255, 255, 252, 1);
+
+// Transition background
+@mixin linear-gradiant-background($from, $to) {
+  /* Fallback for sad browsers */
+  background-color: $to;
+  /* Mozilla Firefox */
+  background-image:-moz-linear-gradient($from, $to);
+  /* Opera */
+  background-image:-o-linear-gradient($from, $to);
+  /* WebKit (Safari 4+, Chrome 1+) */
+  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+  /* WebKit (Chrome 11+) */
+  background-image: -webkit-linear-gradient($from, $to);
+  /* IE10 */
+  background-image: -ms-linear-gradient($from, $to);
+  /* W3C */
+  background-image: linear-gradient($from, $to);
+}

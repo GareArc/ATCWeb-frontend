@@ -1,0 +1,30 @@
+@import "component_table";
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+// Grid
+.grid-container-base {
+  display: grid;
+}
+.grid-item-base {
+  // Test only
+  //border: 2px solid lime;
+  padding: 0;
+  z-index: 2;
+}
+
+// Flex
+.flex-container-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-container-base {
+}
+

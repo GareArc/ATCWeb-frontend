@@ -1,0 +1,19 @@
+// 在el-table上级使用才有效
+.table-blue-base {
+  ::v-deep(.el-table th) {
+    background-image: linear-gradient(#66ccff, blue);
+  }
+  ::v-deep(.el-table thead) {
+    color: floralwhite;
+  }
+  ::v-deep(.el-table) {
+    color: floralwhite;
+  }
+  ::v-deep(.el-table__body td) {
+    background: #66ccff;
+  }
+  ::v-deep(.el-table--enable-row-hover .el-table__body tr:hover) {
+    background: #66ddff;
+  }
+
+}

@@ -1,0 +1,26 @@
+@import "colors";
+
+// Font settings
+
+  // font families
+//@import url("https://fonts.font.im/css?family=Indie+Flower");
+//$font-family-handwriting-en: "Indie Flower";
+@font-face {
+  font-family: QingSong;
+  // sass-loader 真的傻逼。
+  src: url("~@/assets/styles/fonts/QingSongShouXieTi2-2.ttf");
+}
+$font-family-handwriting-ch: QingSong;
+
+  // size
+$font-size-extra-small: 12px;
+$font-size-small: 13pt;
+$font-size-base: 14px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+$font-size-extra-large: 20px;
+$font-size-title: 24px;
+$font-size-title-large: 28px;
+$font-size-title-extra-large: 32px;
+$font-size-site-logo: 55px;
+
